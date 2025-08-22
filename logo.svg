@@ -5,13 +5,13 @@
 
   /* Default fill for light backgrounds */
   .dynamic-fill {
-    fill: black;
+    fill: white;
   }
 
   /* Change to white fill for dark backgrounds */
   @media (prefers-color-scheme: dark) {
     .dynamic-fill {
-      fill: white;
+      fill: black;
     }
   }
 </style>
