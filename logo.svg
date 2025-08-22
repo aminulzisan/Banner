@@ -2,14 +2,15 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
 <style>
   /* This CSS block handles the dynamic coloring */
-
-  /* Default fill for light backgrounds */
+  
+  /* The default color is set to white to be visible on dark themes. */
   .dynamic-fill {
     fill: white;
   }
 
-  /* Change to white fill for dark backgrounds */
-  @media (prefers-color-scheme: dark) {
+  /* This media query specifically targets light color schemes
+     and sets the color to black for better visibility. */
+  @media (prefers-color-scheme: light) {
     .dynamic-fill {
       fill: black;
     }
